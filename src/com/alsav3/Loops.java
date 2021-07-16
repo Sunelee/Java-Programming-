@@ -2,15 +2,16 @@ package com.alsav3;
 
 public class Loops {
 
-    void forLoop(){
+    public void forLoop(int i, int end){
         //for loop
-        for(int i=1;i<=10;i++){
-            if(i==5){
+        for(int k = i; k<=end; k++){
+            if(k==5){
                 //using continue statement
                 continue;//it will skip the rest statement
             }
-            System.out.println(i);
+            System.out.println(k);
         }
+
     }
 
     void whileLoop(){
