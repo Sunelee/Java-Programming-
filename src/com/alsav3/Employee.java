@@ -5,6 +5,7 @@ public class Employee {
     private String name;
     private int age;
     private String position;
+    private String address;
 
     public String getName() {
         return name;
@@ -30,6 +31,13 @@ public class Employee {
         this.position = position;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }
 
 
