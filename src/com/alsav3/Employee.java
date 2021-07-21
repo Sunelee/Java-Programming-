@@ -1,14 +1,29 @@
 package com.alsav3;
 
 public class Employee {
+
+
     //attributes
     private String name;
     private int age;
     private String position;
     private String address;
 
+    public Employee(String name, int age, String position, String address){
+        this.name = name;
+        this.age = age;
+        this.position = position;
+        this.address = address;
+    }
+    public Employee(double salary){
+        System.out.println(salary);
+    }
+    public Employee(int age){
+        this.age = age;
+    }
+
     public String getName() {
-        return name;
+        return name.trim();
     }
 
     public void setName(String name) {
@@ -24,7 +39,7 @@ public class Employee {
     }
 
     public String getPosition() {
-        return position;
+        return position.strip();
     }
 
     public void setPosition(String position) {
